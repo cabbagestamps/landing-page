@@ -1,19 +1,24 @@
 body {
-    
     display: flex;
-    background-color: #1F2937;
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.header,
+.hero-content,
+.information,
+.testimonial {
     padding: 0 10%;
 }
 
 .header, 
 .hero-content {
     background-color: #1F2937;
-    display: flex;    
-    
+    display: flex;      
 }
+
 .header {
     justify-content: space-between;
     align-items: center;
@@ -24,13 +29,16 @@ body {
     color: #F9FAF8;
 }
 
+
 .hero-heading {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .hero-subtext {
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 
@@ -52,7 +60,7 @@ li {
     margin: 10px;
 }
 
-img {
+.hero-image img {
     width: 300px;
     height: auto;
 }
@@ -61,11 +69,55 @@ img {
     font-size: 12px;
     text-align: center;
 }
+.infocard.attribute {
+    
+}
 
 .hero-button {
     background-color: aqua;
     border-radius: 10%;
 }
 
+.information {
+    background-color: rgba(167, 64, 64, 0.933);
+    display: flex;
+    flex-direction: column;
+}
+.info-header {
+    text-align: center;
+}
 
+.info-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
 
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-card img {
+    width: 200px;
+    height: auto;
+}
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quotation-mark {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+.quote-attribute {
+    align-self: flex-end;
+}
