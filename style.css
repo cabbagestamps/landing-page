@@ -1,8 +1,39 @@
-.header  {
-    background-color: #1F2937;
+body {
+    
     display: flex;
+    background-color: #1F2937;
+    flex-direction: column;
     justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10%;
 }
+
+.header, 
+.hero-content {
+    background-color: #1F2937;
+    display: flex;    
+    
+}
+.header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    justify-content: space-between;
+    color: #F9FAF8;
+}
+
+.hero-heading {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero-subtext {
+    font-size: 14px;
+}
+
+
 .header-logo {
     font-size: 24px;
     color: #F9FAF8;
@@ -20,4 +51,21 @@ li {
     padding: 10px;
     margin: 10px;
 }
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.attribute {
+    font-size: 12px;
+    text-align: center;
+}
+
+.hero-button {
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+
 
