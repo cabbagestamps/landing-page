@@ -4,12 +4,17 @@ body {
     justify-content: space-between;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    height: 100vh;
+    min-width: 100vh;
+    color: white;
 }
 
 .header,
 .hero-content,
 .information,
-.testimonial {
+.testimonial,
+.call-to-action, 
+.footer {
     padding: 0 10%;
 }
 
@@ -22,15 +27,18 @@ body {
 .header {
     justify-content: space-between;
     align-items: center;
+
 }
 
 .hero-content {
     justify-content: space-between;
-    color: #F9FAF8;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-
-.hero-heading {
+.hero-header,
+.call-header,
+.info-header {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -41,18 +49,16 @@ body {
     margin-bottom: 10px;
 }
 
-
 .header-logo {
     font-size: 24px;
-    color: #F9FAF8;
-    
 }
+
 .link-group {
     font-size: 18px;
-    color: #E5E7Eb;
     display: flex;
     padding: 8px;
 }
+
 li {
     list-style-type: none;
     text-decoration: none;
@@ -69,22 +75,39 @@ li {
     font-size: 12px;
     text-align: center;
 }
-.infocard.attribute {
-    
+
+.hero-button,
+.call-button {
+    background-color: blue;
+    border: 2px solid #1F2937;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: white;
 }
 
-.hero-button {
-    background-color: aqua;
-    border-radius: 10%;
+.call-button {
+    border: 2px solid white;
+    width: 100px;
 }
 
 .information {
     background-color: rgba(167, 64, 64, 0.933);
     display: flex;
     flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
+
 .info-header {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .info-card {
@@ -97,7 +120,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -106,18 +128,57 @@ li {
     width: 200px;
     height: auto;
 }
+
 .testimonial {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #1F2937;
 }
 
-.quotation-mark {
-    font-size: 30px;
-    font-weight: 600;
-    font-style: italic;
-}
 .quote-attribute {
-    align-self: flex-end;
+    margin-top: 10px;
+    
+}
+
+.quote {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.call-box {
+    display: flex;
+    padding: 100px;
+    background-color: blue;
+    border-radius: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
